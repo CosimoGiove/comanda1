@@ -21,6 +21,7 @@
 
     <!-- Usando Vite -->
     @vite(['resources/js/app.js'])
+    <link rel="stylesheet" href="{{ asset('build/assets/app-fFAgS7OC.css', 'https') }}">
 </head>
 
 <body>
