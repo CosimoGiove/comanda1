@@ -25,4 +25,20 @@
         <p class="ciao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora temporibus, dicta nemo aliquam totam nisi deserunt soluta quas voluptatum ab beatae praesentium necessitatibus minus, facilis illum rerum officiis accusamus dolores!</p>
     </div>
 </div>
+<div class="content">
+    <div class="container">
+        <h2>Seats:</h2>
+        <ul>
+            @foreach($seats as $seat)
+                <li>{{ $seat->name }} ({{ $seat->user->name }}) - Numero {{ $seat->numero_tavolo }}
+                    <form action="{{ route('seats.destroy', $seat) }}" method="post">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit">Elimina</button>
+                    </form>
+                </li>
+            @endforeach
+        </ul>
+    </div>
+</div>
 @endsection
