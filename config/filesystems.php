@@ -72,5 +72,11 @@ return [
     'links' => [
         public_path('storage') => storage_path('app/public'),
     ],
+    'public' => [
+    'driver' => 'local',
+    'root' => storage_path('app/public'),
+    'url' => env('APP_URL', 'https://comanda1-production.up.railway.app'),
+    'visibility' => 'public',
+],
 
 ];

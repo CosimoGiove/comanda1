@@ -13,9 +13,3 @@ mix
  .options({
     https: true,
  });
- module.exports = {
-    //...
-    output: {
-      publicPath: 'https://' + process.env.APP_URL + '/',
-    },
-  };
