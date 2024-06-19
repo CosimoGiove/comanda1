@@ -19,7 +19,7 @@
     @vite(['resources/js/app.js'])
     <!-- script per far funzionare css <!-->
     <link rel="stylesheet" href="{{ asset('build/assets/app-fFAgS7OC.css', 'https') }}">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslbUYTIuGT8yMDpQ/Wvw5nHRubp" crossorigin="anonymous"></script>
+    <script src="//comanda1-production.up.railway.app/build/assets/app-zP5u6OFH.js"></script>
 </head>
 
 <body>
