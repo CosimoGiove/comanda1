@@ -38,10 +38,10 @@
             <div class="imgtavolo">
                 <a href="{{ route('seats.create') }}" class="creatavolo">
                     <span class="bordotavolo">
-                        {{-- <i class="fa-solid fa-utensils"> --}}
+                        <i class="fa-solid fa-utensils">
                             Crea tavolo 
-                            {{-- <i class="fa-solid fa-utensils"></i>
-                        </i> --}}
+                            <i class="fa-solid fa-utensils"></i>
+                        </i>
                     </span>
 
                 </a>
@@ -57,7 +57,7 @@
                                 <div>
                                     <a href="{{ route('orders.create', $seat) }}">
                                         <span class="coloreordine">
-                                            {{-- <i class="fa-solid fa-tablet"></i> --}}
+                                            <i class="fa-solid fa-tablet"></i>
                                             ordina ora
                                         </span>
                                     </a>
