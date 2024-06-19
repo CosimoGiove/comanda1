@@ -6,6 +6,9 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use App\Models\Seat;
+use App\Models\Order;
+
+
 
 class Controller extends BaseController
 {
@@ -13,6 +16,9 @@ class Controller extends BaseController
     public function index()
     {
         $seats = Seat::all();
-        return view('welcome', compact('seats'));
+        $orders = Order::all(); // Retrieve all orders
+        return view('welcome', compact('seats', 'orders'));
+
+
     }
 }

@@ -27,6 +27,7 @@
 </div>
 <div class="content">
     <div class="container">
+        <a href="{{ route('seats.create') }}">Create a new seat</a>
         <h2>Seats:</h2>
         <ul>
             @foreach($seats as $seat)
@@ -36,6 +37,9 @@
                         @method('DELETE')
                         <button type="submit">Elimina</button>
                     </form>
+                    <a href="{{ route('orders.create', $seat) }}">Create Order</a>
+                    <a href="{{route("orders.index",$seat)}}">clickka</a>
+
                 </li>
             @endforeach
         </ul>

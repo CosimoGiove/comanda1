@@ -16,6 +16,7 @@
                 @csrf
                 @method('DELETE')
                 <button type="submit">Elimina</button>
+                <a href="{{ route('orders.create', $seat) }}">Create Order</a>
             </form>
         </li>
     @endforeach
@@ -26,6 +27,7 @@
 @endif
 </ul>
 <a href="{{ route('seats.create') }}">Crea nuovo tavolo</a>
+
 
 </body>
 </html>

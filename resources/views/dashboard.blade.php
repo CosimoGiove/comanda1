@@ -20,5 +20,6 @@
                 </div>
             </div>
         </div>
+        <a href="{{route("orders.by_table")}}">vai</a>
     </div>
 @endsection
