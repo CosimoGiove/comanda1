@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <div class="jumbotron p-5 mb-4 bg-light rounded-3 coloresfondo">
+    {{-- <div class="jumbotron p-5 mb-4 bg-light rounded-3 coloresfondo">
         <div class="container py-5">
             <div class="logo_laravel">
                 <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-25">
@@ -28,7 +28,7 @@
                 aliquam totam nisi deserunt soluta quas voluptatum ab beatae praesentium necessitatibus minus, facilis illum
                 rerum officiis accusamus dolores!</p>
         </div>
-    </div>
+    </div> --}}
     <div class="content">
         <div class="text-center">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3VK4tX_VGts66_mnK630LVu3-nHNwCpzhkQ&s"
