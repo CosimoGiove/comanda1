@@ -1,8 +1,8 @@
 @extends('layouts.app')
 @section('content')
 
-<div class="jumbotron p-5 mb-4 bg-light rounded-3">
-    <div class="container py-5">
+{{-- <div class="jumbotron p-5 mb-4 bg-light rounded-3 coloresfondo"> --}}
+    {{-- <div class="container py-5">
         <div class="logo_laravel">
             <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-25">
                 <g clip-path="url(#clip0)" fill="#EF3B2D">
@@ -24,27 +24,82 @@
     <div class="container">
         <p class="ciao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora temporibus, dicta nemo aliquam totam nisi deserunt soluta quas voluptatum ab beatae praesentium necessitatibus minus, facilis illum rerum officiis accusamus dolores!</p>
     </div>
-</div>
+</div> --}}
 <div class="content">
+    <div class="text-center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3VK4tX_VGts66_mnK630LVu3-nHNwCpzhkQ&s" alt="">
+    </div>
     <div class="container">
-        <a href="{{ route('seats.create') }}">Create a new seat</a>
-        <h2>Seats:</h2>
+        <div class="imgtavolo">
+            <a href="{{ route('seats.create') }}" class="creatavolo">
+               <span class="bordotavolo">
+                <i class="fa-solid fa-utensils">Crea tavolo <i class="fa-solid fa-utensils"></i></i>
+               </span>
+                
+            </a>
+        </div>
+       
+        <h2>Tavoli:</h2>
         <ul>
             @foreach($seats as $seat)
-                <li>{{ $seat->name }} ({{ $seat->user->name }}) - Numero {{ $seat->numero_tavolo }}
-                    <form action="{{ route('seats.destroy', $seat) }}" method="post">
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit">Elimina</button>
-                    </form>
-                    <a href="{{ route('orders.create', $seat) }}">Create Order</a>
-                    <a href="{{route("orders.index",$seat)}}">clickka</a>
+                <li class="tavoli">
+                    <span class="nomedeltavolo">
+                        Nome del tavolo:{{ $seat->name }}- Numero {{ $seat->numero_tavolo }}
+                        <div class="d-flex">
+                            <div>      
+                                <a href="{{ route('orders.create', $seat) }}">
+                                    <span class="coloreordine">
+                                        <i class="fa-solid fa-tablet"></i>ordina ora
+                                    </span>     
+                                </a>
+                           </div>
+                            <div>
+                                <span>
+                                    <a href="{{route("orders.index",$seat)}}"><span class="mostraordini">mostra ordini</span></a>
+                                </span>
+                               
+                                <!-- Button trigger modal -->
+       
+    </div>
+    <div class="elimina">
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Cancella
+         </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            sei sicuro di dover cancellare il tavolo ? 
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">chiudi</button>
+            <button type="button" class="btn btn-primary">
+              <form action="{{ route('seats.destroy', $seat) }}" method="post">
+                  @csrf
+                  @method('DELETE')
+                  <button type="submit">Elimina</button>
+              </form>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>            
+    </div>
+        </span>
+                   
 
                 </li>
             @endforeach
         </ul>
     </div>
-    <p class="d-inline-flex gap-1">
+    {{-- <p class="d-inline-flex gap-1">
         <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
           Link with href
         </a>
@@ -56,6 +111,7 @@
         <div class="card card-body">
           Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
         </div>
-      </div>
+      </div> --}}
 </div>
+{{-- </div> --}}
 @endsection
