@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Usando Vite -->
-    {{-- @vite(['resources/js/app.js']) --}}
+    @vite(['resources/js/app.js'])
     <!-- script per far funzionare css <!-->
         <link rel="stylesheet" href="https://comanda1-production.up.railway.app/build/assets/app-jZcUqRUu.css">
         <script src="https://comanda1-production.up.railway.app/build/assets/app-vqgZuLnt.js"></script>
