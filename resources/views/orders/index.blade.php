@@ -31,7 +31,7 @@
             @endforeach
         </tbody>
     </table>
-    {{-- <a href="{{ route('orders.create', $seat) }}" class="btn btn-primary">Create New Order</a> --}}
+    <a href="{{route("welcome")}}">indeitro</a>
 
 </body>
 </html>
