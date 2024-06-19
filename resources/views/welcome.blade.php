@@ -58,13 +58,13 @@
                                     <a href="{{ route('orders.create', $seat) }}">
                                         <span class="coloreordine">
                                             <i class="fa-solid fa-tablet"></i>
-                                            ordina ora
+                                            Ordina
                                         </span>
                                     </a>
                                 </div>
                                 <div>
                                     <span>
-                                        <a href="{{ route('orders.index', $seat) }}"><span class="mostraordini">mostra
+                                        <a href="{{ route('orders.index', $seat) }}"><span class="mostraordini">Mostra
                                                 ordini</span></a>
                                     </span>
 
@@ -72,7 +72,7 @@
 
                                 </div>
                                 <div class="elimina">
-                                    <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                    <button type="button" class="btn btn-danger bottonecancellare" data-bs-toggle="modal"
                                         data-bs-target="#exampleModal">
                                         Cancella
                                     </button>
