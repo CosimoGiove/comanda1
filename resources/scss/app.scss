@@ -26,44 +26,20 @@
 .imgtavolo{
     font-size: 20px;
     text-align: center;
-    margin-top: 20px;
 }
 .bordotavolo{
     border: 1px solid black;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: #82C3D5;
-    // animation:animazionebottone 5s infinite;
+
 }
-// @keyframes animazionebottone {
-//     0%{transform: rotate(0deg);}
-//     20%{transform: rotate(20deg); box-shadow: 3px 3px 3px 3px blue;}
-//     40%{transform: rotate(0deg); box-shadow: 3px 3px 3px 1px  #0050A5}
-//     60%{transform: rotate(-20deg);box-shadow: 3px 3px 3px 3px #82C3D5;}
-//     100%{transform: rotate(0deg);}
-// }
 
-
-
-.coloreordine{
-    // color: #01283f ;
-    // font-size: 16px;
-    // margin-right: 20px;
-}
 
 .elimina{
-    // margin-left: 20px;
-}
-// .bottonecancellare{
-//     font-size: 12px;
-// }
-.mostraordini{
-color: #01283f ;
-}
-.creatavolo2{
-    text-align: center;
+    margin-left: 20px;
 }
 
-.nomeordinee{
-    margin: 10px;
+.mostraordini{
+color: #01283f ;
 }
