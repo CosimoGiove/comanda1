@@ -72,7 +72,7 @@
 
                                 </div>
                                 <div class="elimina">
-                                    <button type="button" class="btn btn-danger bottonecancellare" data-bs-toggle="modal"
+                                    <button type="button" class="btn btn-danger" data-bs-toggle="modal"
                                         data-bs-target="#exampleModal">
                                         Cancella
                                     </button>
