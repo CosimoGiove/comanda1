@@ -10,7 +10,9 @@ export default defineConfig({
                     enabled: true,
                     files: ['resources/scss/app.scss'], // Add this line
                 },
+                root: __dirname,
             },
+           
         ]),
     ],
     build: {
