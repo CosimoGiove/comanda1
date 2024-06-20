@@ -1,22 +1,25 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
-import path from 'path';
 
 export default defineConfig({
     plugins: [
-        laravel({
-            input: [
-                'resources/scss/app.scss',
-                'resources/js/app.js',
-            ],
-            refresh: true,
-        }),
+        laravel([
+            'esources/css/app.css',
+            {
+                scss: {
+                    enabled: true,
+                    files: ['resources/scss/app.scss'],
+                },
+            },
+        ]),
     ],
-    resolve: {
-        alias: {
-            '~resources': '/resources/',
-            '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap')
-        }
+    build: {
+        mode: 'production',
+        css: {
+            // Enable CSS optimization and compression
+            optimize: true,
+            // Include CSS files in the production build
+            output: 'css/[name].css',
+        },
     },
-
 });
