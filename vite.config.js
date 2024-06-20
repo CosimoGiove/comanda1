@@ -8,18 +8,12 @@ export default defineConfig({
             {
                 scss: {
                     enabled: true,
-                    files: ['resources/scss/app.scss'],
+                    files: ['resources/scss/app.scss'], // Add this line
                 },
             },
         ]),
     ],
     build: {
         mode: 'production',
-        css: {
-            // Enable CSS optimization and compression
-            optimize: true,
-            // Include CSS files in the production build
-            output: 'css/[name].css',
-        },
     },
 });
