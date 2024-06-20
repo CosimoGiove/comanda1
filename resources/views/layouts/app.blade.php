@@ -14,7 +14,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('scss/app.scss', 'https') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css', 'https') }}">
     {{-- <link rel="stylesheet" href="https://comanda1-production.up.railway.app/build/assets/app-jZcUqRUu.css"> --}}
     <script src="https://comanda1-production.up.railway.app/build/assets/app-vqgZuLnt.js"></script>
 
